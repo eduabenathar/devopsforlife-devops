@@ -1,10 +1,10 @@
-	# Setar a imagem do nginx
+# Setar a imagem do nginx
 FROM nginx
 
-	# Autor/Mantenedor
-MAINTAINER Jonathan Baraldi
+# Autor/Mantenedor
+MAINTAINER Eduardo Aben Athar
 
-	# Copiar configurações customizadas do diretório atual
+# Copiar configurações customizadas do diretório atual
 COPY nginx.conf /etc/nginx/nginx.conf
 
 COPY certificado/certificado.crt  /etc/ssl/certificado.crt

@@ -2,7 +2,7 @@
 FROM --platform=linux/amd64 node:alpine
 
 # Autor/Mantenedor
-MAINTAINER Jonathan Baraldi
+MAINTAINER Eduardo Aben Athar
 
 RUN mkdir -p /src 
 

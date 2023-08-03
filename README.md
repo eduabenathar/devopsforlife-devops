@@ -1,21 +1,21 @@
 <center>
-<a href="https://github.com/jonathanbaraldi/devopsforlife-devops/stargazers">
-	<img src="https://img.shields.io/github/stars/jonathanbaraldi/devopsforlife-devops" alt="Stars Badge"/>
+<a href="https://github.com/eduabenathar/devopsforlife-devops/stargazers">
+	<img src="https://img.shields.io/github/stars/eduabenathar/devopsforlife-devops" alt="Stars Badge"/>
 </a>
-<a href="https://github.com/jonathanbaraldi/devopsforlife-devops/network/members">
-	<img src="https://img.shields.io/github/forks/jonathanbaraldi/devopsforlife-devops" alt="Forks Badge"/>
+<a href="https://github.com/eduabenathar/devopsforlife-devops/network/members">
+	<img src="https://img.shields.io/github/forks/eduabenathar/devopsforlife-devops" alt="Forks Badge"/>
 </a>
-<a href="https://github.com/jonathanbaraldi/devopsforlife-devops/pulls">
-	<img src="https://img.shields.io/github/issues-pr/jonathanbaraldi/devopsforlife-devops" alt="Pull Requests Badge"/>
+<a href="https://github.com/eduabenathar/devopsforlife-devops/pulls">
+	<img src="https://img.shields.io/github/issues-pr/eduabenathar/devopsforlife-devops" alt="Pull Requests Badge"/>
 </a>
-<a href="https://github.com/jonathanbaraldi/devopsforlife-devops/issues">
-	<img src="https://img.shields.io/github/issues/jonathanbaraldi/devopsforlife-devops" alt="Issues Badge"/>
+<a href="https://github.com/eduabenathar/devopsforlife-devops/issues">
+	<img src="https://img.shields.io/github/issues/eduabenathar/devopsforlife-devops" alt="Issues Badge"/>
 </a>
-<a href="https://github.com/jonathanbaraldi/devopsforlife-devops/graphs/contributors">
-	<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/jonathanbaraldi/devopsforlife-devops?color=2b9348">
+<a href="https://github.com/eduabenathar/devopsforlife-devops/graphs/contributors">
+	<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/eduabenathar/devopsforlife-devops?color=2b9348">
 </a>
-<a href="https://github.com/jonathanbaraldi/devopsforlife-devops/blob/master/LICENSE">
-	<img src="https://img.shields.io/github/license/jonathanbaraldi/devopsforlife-devops?color=2b9348" alt="License Badge"/>
+<a href="https://github.com/eduabenathar/devopsforlife-devops/blob/master/LICENSE">
+	<img src="https://img.shields.io/github/license/eduabenathar/devopsforlife-devops?color=2b9348" alt="License Badge"/>
 </a>
 
 </center>

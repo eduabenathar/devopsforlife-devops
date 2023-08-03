@@ -18,7 +18,7 @@ Pegar o IP que é usado pela VM do Docker para rodar as aplicações
 # 2) Container REDIS
 	# docker build -t <your username>/redis .
 	# docker run -d --name redis -p 6379:6379 <your username>/redis
-	# docker run -d --name redis -p 6379:6379 jonathanbaraldi/redis
+	# docker run -d --name redis -p 6379:6379 eduabenathar/redis
 
 Com isso temos o container do Redis rodando na porta 6379.
 
@@ -30,7 +30,7 @@ Ir no diretório /node onde tem o Dockerfile da aplicação, e rodar o build.
 	
 	Rodando a imagem do node, fazendo a ligação com o container do Redis
 	# docker run -d --name node -p 8080:8080 --link <redis name>  <your username>/node
-	# docker run -d --name node -p 8080:8080 --link redis jonathanbaraldi/node
+	# docker run -d --name node -p 8080:8080 --link redis eduabenathar/node
 
 Com isso já temos a aplicação rodando, conectada no Redis
 
@@ -41,7 +41,7 @@ Ir no diretório /nginx onde tem o Dockerfile da aplicação, e rodar o build. F
 
 	Criando o container do nginx a partir da imagem e fazendo a ligação com o container do Node
 	# docker run -d --name nginx -p 80:80 --link <app running>  <your username>/nginx
-	# docker run -d --name nginx -p 80:80 --link node jonathanbaraldi/nginx
+	# docker run -d --name nginx -p 80:80 --link node eduabenathar/nginx
 
 ----------------------------------------------------------------
 # 5) Docker Compose
