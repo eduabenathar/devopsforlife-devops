@@ -30,7 +30,7 @@
 
 Este repositório pertence a comunidade DevOps for Life:
 
-https://devopsforlife.io
+https://vegus.srv.br
 
 
 

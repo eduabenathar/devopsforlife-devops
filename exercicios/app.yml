@@ -5,23 +5,22 @@ metadata:
   name: logs
   # namespace: kube-system
 rules:
-- apiGroups:
-  - ""
-  resources:
-  - nodes
-  - nodes/proxy
-  - services
-  - endpoints
-  - pods
-  verbs:
-  - get
-  - list
-  - watch
-- nonResourceURLs:
-  - /metrics
-  verbs:
-  - get
-
+  - apiGroups:
+      - ""
+    resources:
+      - nodes
+      - nodes/proxy
+      - services
+      - endpoints
+      - pods
+    verbs:
+      - get
+      - list
+      - watch
+  - nonResourceURLs:
+      - /metrics
+    verbs:
+      - get
 
 ---
 apiVersion: rbac.authorization.k8s.io/v1
@@ -34,16 +33,12 @@ roleRef:
   kind: ClusterRole
   name: logs
 subjects:
-
-
-- kind: Group
-  name: system:serviceaccounts
-  apiGroup: rbac.authorization.k8s.io
-- kind: ServiceAccount
-  name: logs
-  namespace: kube-system
-
-
+  - kind: Group
+    name: system:serviceaccounts
+    apiGroup: rbac.authorization.k8s.io
+  - kind: ServiceAccount
+    name: logs
+    namespace: kube-system
 
 ---
 apiVersion: v1
@@ -51,7 +46,6 @@ kind: ServiceAccount
 metadata:
   name: logs
   # namespace: whoami5
-
 
 ---
 kind: Deployment
@@ -74,13 +68,12 @@ spec:
     spec:
       serviceAccount: logs
       containers:
-      - name: whoami5
-        image: jwilder/whoami
-        ports:
-        - containerPort: 8000
-        securityContext:
-          privileged: true
-
+        - name: whoami5
+          image: jwilder/whoami
+          ports:
+            - containerPort: 8000
+          securityContext:
+            privileged: true
 
 ---
 apiVersion: v1
@@ -91,11 +84,10 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-  - port: 80 # Porta a ser exposta pelo SERVICE
-    targetPort: 8000 # Porta que a aplicação está rodando no POD
+    - port: 80 # Porta a ser exposta pelo SERVICE
+      targetPort: 8000 # Porta que a aplicação está rodando no POD
   selector:
     application: whoami5
-
 
 ---
 apiVersion: networking.k8s.io/v1
@@ -107,10 +99,10 @@ metadata:
     allow.http: "false"
 spec:
   rules:
-  - host: app.rancher.devopsforlife.io
-    http:
-      paths:
-        - path: /
-          backend:
-            name: whoami5
-            port: 80 # Porta que sera usada pelo SERVICE - DEVE SER A MESMA do SERVICE
+    - host: rancher.vegus.srv.br
+      http:
+        paths:
+          - path: /
+            backend:
+              name: whoami5
+              port: 80 # Porta que sera usada pelo SERVICE - DEVE SER A MESMA do SERVICE

@@ -3,7 +3,7 @@
 - 4 máquinas virtuais com 2/4 processadores e 6/8 gb de memória ram - 40-50gb disco
 - 1 domínio
 - Sistema operacional Ubuntu 22.04 LTS
-- Domínio usado pelo instrutor do curso é: devopsforlife.io
+- Domínio usado pelo instrutor do curso é: vegus.srv.br
 
 https://github.com/eduabenathar/devops
 

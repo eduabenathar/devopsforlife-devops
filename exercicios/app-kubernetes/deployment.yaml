@@ -76,7 +76,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: my-app.rancher.devopsforlife.io
+    - host: my-app.rancher.vegus.srv.br
       http:
         paths:
           - backend:
