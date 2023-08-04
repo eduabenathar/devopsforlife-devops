@@ -109,11 +109,3 @@ spec:
                 name: whoami5
                 port:
                   number: 80 # Porta que sera usada pelo SERVICE - DEVE SER A MESMA do SERVICE
-
-          - path: /your-path
-            pathType: Prefix
-            backend:
-              service:
-                name: your-service-name
-                port:
-                  number: 80
