@@ -184,7 +184,11 @@ $ docker run -d --restart=unless-stopped \
 Com o Rancher já rodando, irei adicionar a entrada de cada DNS para o IP de cada máquina.
 
 ```sh
-$ rancher.<dominio> = IP do host A
+user: admin
+password: yJNzxV7d0vJgoGYq
+password: eA291985!@#$
+page: https://rancher.vegus.srv.br
+rancher.<dominio> = IP do host A
 ```
 
 
@@ -241,6 +245,7 @@ sudo apt-get install -y kubectl
 Com o kubectl instalado, pegar as credenciais de acesso no Rancher e configurar o kubectl.
 
 ```sh
+mkdir -p ~/.kube
 $ vi ~/.kube/config
 $ kubectl get nodes
 ```
@@ -373,10 +378,10 @@ Os secrets são usados para salvar dados sensitivos dentro do cluster, como por 
 Iremos criar os segredos.
 
 ```sh
-$ echo -n "<nome-aluno>" | base64
-am9uYXRoYW5iYXJhbGRp
-$ echo -n "<senha>" | base64
-am9uam9u
+$ echo -n "eduardo.abenathar" | base64
+ZWR1YXJkby5hYmVuYXRoYXI=
+$ echo -n "eA291985@!" | base64
+ZUEyOTE5ODVAIQ==
 ```
 
 Agora vamos escrever o secret com esses objetos. Após colocar os valores no arquivo secrets.yml, aplicar ele no cluster.
