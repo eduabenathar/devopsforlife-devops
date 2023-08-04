@@ -99,10 +99,21 @@ metadata:
     allow.http: "false"
 spec:
   rules:
-    - host: rancher.vegus.srv.br
+    - host: app.rancher.vegus.srv.br
       http:
         paths:
           - path: /
+            pathType: Prefix
             backend:
-              name: whoami5
-              port: 80 # Porta que sera usada pelo SERVICE - DEVE SER A MESMA do SERVICE
+              service:
+                name: whoami5
+                port:
+                  number: 80 # Porta que sera usada pelo SERVICE - DEVE SER A MESMA do SERVICE
+
+          - path: /your-path
+            pathType: Prefix
+            backend:
+              service:
+                name: your-service-name
+                port:
+                  number: 80
