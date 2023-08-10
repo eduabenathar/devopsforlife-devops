@@ -542,6 +542,7 @@ Esse exercício serve para demonstrar como podemos usar o kubernetes para organi
 ```sh
 $ kubectl get nodes 
 $ kubectl label nodes <your-node-name> disktype=ssd
+$ kubectl label nodes k8s1 disktype=ssd
 
 $ kubectl apply -f node-selector.yml
 

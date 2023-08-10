@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: eduabenathar/my-app:7
+          image: eduabenathar/my-app:1
           ports:
             - containerPort: 8080
           env:
