@@ -380,7 +380,7 @@ Iremos criar os segredos.
 ```sh
 $ echo -n "eduardo.abenathar" | base64
 ZWR1YXJkby5hYmVuYXRoYXI=
-$ echo -n "eA291985@!" | base64
+$ echo -n "teste" | base64
 ZUEyOTE5ODVAIQ==
 ```
 
