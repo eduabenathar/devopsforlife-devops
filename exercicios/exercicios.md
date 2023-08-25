@@ -186,7 +186,7 @@ Com o Rancher já rodando, irei adicionar a entrada de cada DNS para o IP de cad
 ```sh
 user: admin
 password: yJNzxV7d0vJgoGYq
-password: eA291985!@#$
+password: teste
 page: https://rancher.vegus.srv.br
 rancher.<dominio> = IP do host A
 ```
